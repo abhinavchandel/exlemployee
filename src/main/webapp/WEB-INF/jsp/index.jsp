@@ -16,7 +16,6 @@ h3 {
 }
 .input {
 	display: block;
-    width: 100%;
     margin-top: 15px;
     font-size: 16px;
     padding: 5px;
@@ -39,16 +38,33 @@ table {
     margin: auto;
     border: 1px solid #000;
 }
+label {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    color: #333;
+    height: 20px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: right;
+    clear: both;
+    float:left;
+    margin-right:15px;
+}
 .link {
+}
+.width_input{
+ width: 100%;
 }
 </style>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <div class="formwrap">
 <h3>Search Employee Application</h3>
-<input type="text" id="name" class="input" >
-<input type="date" id="startdate" class="input">
-<input type="date" id="endDate" class="input">
+<input type="text" id="name" class="input width_input"    placeholder="Start searching for a employee by first name or last name" >
+
+<label for="startdate">Employment start date: </label><input type="date" id="startdate" class="input">
+<label for="enddate">Employment end date: </label><input type="date" id="endDate" class="input">
 <input type="button" onclick="getData()" value="Search Employee" class="btn">
 <a href="/create" class="btn">+ Add Employee</a>
 </div>
