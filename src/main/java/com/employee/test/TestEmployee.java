@@ -1,6 +1,7 @@
 package com.employee.test;
 
 public class TestEmployee {
+
 	/*
 	 * @Test public void
 	 * givenUserDoesNotExists_whenUserInfoIsRetrieved_then404IsReceived() throws
